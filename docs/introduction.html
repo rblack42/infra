@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Introduction &#8212; test 0.0.1 documentation</title>
+    <link rel="stylesheet" href="_static/sphinx13.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Bibliography" href="zbibliography.html" />
+    <link rel="prev" title="Indices and tables" href="contents.html" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700'
+          rel='stylesheet' type='text/css' />
+ 
+    <style type="text/css">
+      table.right { float: right; margin-left: 20px; }
+      table.right td { border: 1px solid #ccc; }
+      
+    </style>
+    <script>
+      // intelligent scrolling of the sidebar content
+      $(window).scroll(function() {
+        var sb = $('.sphinxsidebarwrapper');
+        var win = $(window);
+        var sbh = sb.height();
+        var offset = $('.sphinxsidebar').position()['top'];
+        var wintop = win.scrollTop();
+        var winbot = wintop + win.innerHeight();
+        var curtop = sb.position()['top'];
+        var curbot = curtop + sbh;
+        // does sidebar fit in window?
+        if (sbh < win.innerHeight()) {
+          // yes: easy case -- always keep at the top
+          sb.css('top', $u.min([$u.max([0, wintop - offset - 10]),
+                                $(document).height() - sbh - 200]));
+        } else {
+          // no: only scroll if top/bottom edge of sidebar is at
+          // top/bottom edge of window
+          if (curtop > wintop && curbot > winbot) {
+            sb.css('top', $u.max([wintop - offset - 10, 0]));
+          } else if (curtop < wintop && curbot < winbot) {
+            sb.css('top', $u.min([winbot - sbh - offset - 20,
+                                  $(document).height() - sbh - 200]));
+          }
+        }
+      });
+    </script>
+
+  </head><body>
+<div class="pageheader">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="usage/installation.html">Get it</a></li>
+    <li><a href="contents.html">Docs</a></li>
+    <li><a href="develop.html">Extend/Develop</a></li>
+  </ul>
+  <div>
+    <a href="index.html">
+      <img src="_static/logo.png" alt="PyLiT" />
+    </a>
+  </div>
+</div>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="zbibliography.html" title="Bibliography"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="contents.html" title="Indices and tables"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">PyLiT home</a>&#160;|</li>
+        <li><a href="contents.html">Documentation</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href="">Introduction</a></li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="contents.html">
+              <img class="logo" src="_static/logo.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="contents.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Introduction</a><ul>
+<li><a class="reference internal" href="#data-backup">Data Backup</a><ul>
+<li><a class="reference internal" href="#public-data">Public Data</a></li>
+<li><a class="reference internal" href="#private-data">Private Data</a><ul>
+<li><a class="reference internal" href="#secrets">Secrets</a></li>
+<li><a class="reference internal" href="#secret-storage">Secret Storage</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#operating-systems-backups">Operating Systems Backups</a></li>
+<li><a class="reference internal" href="#other-software">Other software</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="contents.html"
+                        title="previous chapter">Indices and tables</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="zbibliography.html"
+                        title="next chapter">Bibliography</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/introduction.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <p>Read time: 6.2 minutes (618 words)</p>
+<div class="section" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<p>After teaching Computer Science for over 23 years, I have encountered thousands
+of students who come to class with personal machines and want to use those for
+my course projects. I have little control over what operating system they have,
+or exactly what hardware they have. The result is a messy start to each class.</p>
+<p>One of my operating rules has always been to keep my machines in a state that
+lets me easily recover if something drastic happens. I came to this approach
+the standard way: I got bit hard by a machine failing at a very inopportune
+time - in the middle of a class while I was working on my Master’s degree in
+Computer Science. My new approach relies on two things: reliable backups of
+critical data, and an easy way to rebuild my machines if the need arises.</p>
+<div class="section" id="data-backup">
+<h2>Data Backup<a class="headerlink" href="#data-backup" title="Permalink to this headline">¶</a></h2>
+<p>There are two kinds of data you need to protect:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Public data - data you publish to the outside world</p></li>
+<li><p>Private data - usually something you definitely do not want that outside world to see!</p></li>
+</ul>
+</div></blockquote>
+<div class="section" id="public-data">
+<h3>Public Data<a class="headerlink" href="#public-data" title="Permalink to this headline">¶</a></h3>
+<p>In my teaching work, all of my course materials (except tests) fall into the
+<em>Public</em> data set. I keep all of this material on <a class="reference external" href="https://github.com/">Github</a>. I also use <a class="reference external" href="https://github.com/">Github</a>
+for all open-source projects I set up. Many of my fellow faculty members prefer
+to lock up their materials on something like <em>Blackbord</em> where only registered
+students have access. I never liked this approach and over my teaching career I
+have had interactions with folks from around the world about my materials.</p>
+</div>
+<div class="section" id="private-data">
+<h3>Private Data<a class="headerlink" href="#private-data" title="Permalink to this headline">¶</a></h3>
+<p>Some of my materials should not be available to the public. Obviously, that
+includes tests I give in my classes, but there is more to this category to
+consider.</p>
+<div class="section" id="secrets">
+<h4>Secrets<a class="headerlink" href="#secrets" title="Permalink to this headline">¶</a></h4>
+<p>Just deciding the public should not see something is not enough. You need to
+consider exactly who might see your materials. My tests could be stored in a
+private repository on <a class="reference external" href="https://github.com/">Github</a>, but that leaves that material open to <a class="reference external" href="https://github.com/">Github</a>
+employees who manage that system. “Normal” students will not have access, but
+in this increasingly online world, I have no idea how my materials might make
+their way into the world. The solution involves encryption - scrambling the
+private data so it really does not matter ( we all hope) if that material
+escapes, it is still <em>private</em>”!</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When I went to college, I ran into a system that was pretty silly. Tests
+were all given on paper and collected at the end by the professor. That
+made them private. Some professors returned the tests when graded, making
+them essentially public. Other rprofessors collected the tests after the
+students reviewed their work, thinking that the test would remain private.
+However, clever students would memorize questions and write them down back in the
+dorm. Those tests were saved in dorms for students to review before a test.
+We called these examples “coofers”.</p>
+</div>
+</div>
+<div class="section" id="secret-storage">
+<h4>Secret Storage<a class="headerlink" href="#secret-storage" title="Permalink to this headline">¶</a></h4>
+<p>I still want a backup for my secret data. One simple place to save this
+material is <a class="reference external" href="https://github.com/">github</a>. I normally do not encrypt entire repositories, but encrypt
+sensitive files instead. There are a number of ways to do this, which we will
+explore later.</p>
+</div>
+</div>
+</div>
+<div class="section" id="operating-systems-backups">
+<h2>Operating Systems Backups<a class="headerlink" href="#operating-systems-backups" title="Permalink to this headline">¶</a></h2>
+<p>In the past operating systems were installed from DVDs. However, those devices
+are disappearing in favor of saving images of some kind on digital media like
+flask drives. My last copy of Windows 10 came on a USB flash drive. All
+versions of operating system software are downloaded from the internet. In the
+Linux world, <strong>ISO</strong> images, designed to be “burned” to a DVD, are downloaded,
+but I seldom actually use a real DVD. Instead, a “bootable” flash drive is used
+to install the OS.</p>
+</div>
+<div class="section" id="other-software">
+<h2>Other software<a class="headerlink" href="#other-software" title="Permalink to this headline">¶</a></h2>
+<p>There are always tools you need to live your normal connected life. That
+includes email clients, word processing tools, games. (Wait, serious students
+do not play games - or do they?)</p>
+<p>I suggest keeping the media you used to install this stuff available somewhere
+in case you need to reinstall it later.</p>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="zbibliography.html" title="Bibliography"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="contents.html" title="Indices and tables"
+             >previous</a> |</li>
+        <li><a href="index.html">PyLiT home</a>&#160;|</li>
+        <li><a href="contents.html">Documentation</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href="">Introduction</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Roie R. Black and the Sphinx team.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.2.1.
+    </div>
+  </body>
+</html>

@@ -5,6 +5,8 @@ test documentation contents
 ..  toctree::
     :maxdepth: 2
 
+    introduction
+
     zbibliography
 
 Indices and tables
